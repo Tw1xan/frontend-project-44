@@ -1,2 +1,3 @@
-#!/usr/bin/env node
-Welcome to the Brain Games!
+#!/usr/bin/env nod
+
+'Welcome to the Brain Games!'
