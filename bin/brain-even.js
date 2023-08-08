@@ -2,50 +2,38 @@
 
 import readlineSync from 'readline-sync';
 
-import { cli } from './brain-games.js'
 
 
+function isEven(number) {
+  return number % 2 === 0;
+}
 
-const getDescription = () => {
-    const description = console.log('Answer "yes" if the number is even, otherwise answer "no".');
-    return description;
-};
+function playGame() {
+  console.log("Welcome to the Brain Games!");
+  const name = readlineSync.question("May I have your name? ");
+  console.log(`Hello, ${name}!`);
+  console.log("Answer 'yes' if the number is even, otherwise answer 'no'.");
 
-getDescription();
-//  export default () => {
+  let correctAnswers = 0;
 
-//     const countReplay = 3;
+  while (correctAnswers < 3) {
+    const questionNumber = Math.floor(Math.random() * 100) + 1;
+    console.log(`Question: ${questionNumber}`);
 
-    
-// };
-// export const randomNumber = (min, max) => {
-//     const randomMarker = Math.floor(Math.random() * (max - min + 1)) + min;
-//     return randomMarker;
-// };
+    const userAnswer = readlineSync.question("Your answer: ");
+    const correctAnswer = isEven(questionNumber) ? "yes" : "no";
 
-// export const evenNumber = (number) => number % 2 === 0;
+    if (userAnswer === correctAnswer) {
+      console.log("Correct!");
+      correctAnswers++;
+    } else {
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+      console.log(`Let's try again, ${name}!`);
+      return;
+    }
+  }
 
-// export const getRandomAndQuestion = () => {
-//     const questions = randomNumber(1, 100);
-//     const rightAnswer = evenNumber(questions) ? 'yes' : 'no';
-//     return [questions, rightAnswer];
-// };
-// export const games = () => {
-//     getRandomAndQuestion(getDescription, getRandomAndQuestion);
-// };
+  console.log(`Congratulations, ${name}!`);
+}
 
-// for (let i = 0; i < roundsCount; i += 1) {
-//     const [question, correctAnswer] = getQuestionAndAnswer();
-//     console.log(`Question: ${question}`);
-//     const playerAnswer = readlineSync.question('You answer: ');
-
-//     if (correctAnswer === playerAnswer) {
-//       console.log('Correct!');
-//     } else {
-//       console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-//       console.log(`Let's try again, ${playerName}`);
-//       return;
-//     }
-//   }
-//   console.log(`Congratulations, ${playerName}`);
-// };
+playGame();
