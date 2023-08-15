@@ -2,22 +2,22 @@
 
 import { generateQuestion } from '../src/index.js';
 import readlineSync from 'readline-sync';
-
+import { cli } from '../bin/brain-games.js';
 
 function playCalculatorGame() {
-  console.log("brain-calc\nWelcome to the Brain Games!");
+  console.log("Welcome to the Brain Games!");
   const name = readlineSync.question("May I have your name? ");
-  console.log(`Hello, ${name}!\n`);
+  console.log(`Hello, ${name}!`);
 
   for (let i = 0; i < 3; i++) {  // Number of questions
     const { question, correctAnswer } = generateQuestion();
     const userAnswer = readlineSync.question(`What is the result of the expression?\nQuestion: ${question}\nYour answer: `);
     
     if (userAnswer === correctAnswer.toString()) {
-      console.log("Correct!\n");
+      console.log("Correct!");
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      console.log(`Let's try again, ${name}!\n`);
+      console.log(`Let's try again, ${name}!`);
       return;
     }
   }
