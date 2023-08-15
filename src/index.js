@@ -1,19 +1,13 @@
-
 import readlineSync from 'readline-sync';
-
-
-  
-    
-    console.log("Welcome to the Brain Games!");
-    const name = readlineSync.question("May I have your name? ");
-    console.log(`Hello, ${name}!`);
-    
 
     export function isEven(number) {
         return number % 2 === 0;
       };
 
     export function playGame() {
+      console.log("brain-calc\nWelcome to the Brain Games!");
+  const name = readlineSync.question("May I have your name? ");
+  console.log(`Hello, ${name}!\n`);
     console.log("Answer 'yes' if the number is even, otherwise answer 'no'.");
   
     let correctAnswers = 0;
@@ -41,13 +35,27 @@ import readlineSync from 'readline-sync';
 
   // Логика игры калькулятор
   
-  export function generateRandomExpression() {
-    const operators = ['+', '-', '*'];
-    const operator = operators[Math.floor(Math.random() * operators.length)];
-    const num1 = Math.floor(Math.random() * 100);
-    const num2 = Math.floor(Math.random() * 100);
-  
-    return { expression: `${num1} ${operator} ${num2}`, answer: eval(`${num1} ${operator} ${num2}`) };
+  const OPERATIONS = {
+    '+': (a, b) => a + b,
+    '-': (a, b) => a - b,
+    '*': (a, b) => a * b,
   };
+  
+  function generateQuestion() {
+    const num1 = Math.floor(Math.random() * 20) + 1;
+    const num2 = Math.floor(Math.random() * 20) + 1;
+    const operation = getRandomOperation();
+    const question = `${num1} ${operation} ${num2}`;
+    const correctAnswer = OPERATIONS[operation](num1, num2);
+    return { question, correctAnswer };
+  }
+  
+  function getRandomOperation() {
+    const operationKeys = Object.keys(OPERATIONS);
+    return operationKeys[Math.floor(Math.random() * operationKeys.length)];
+  }
+  
+  export { generateQuestion };
+  
   
   
