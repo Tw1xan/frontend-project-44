@@ -2,7 +2,7 @@
 
 import { generateQuestion } from '../src/index.js';
 import readlineSync from 'readline-sync';
-import { cli } from '../bin/brain-games.js';
+// import { cli } from '../bin/brain-games.js';
 
 function playCalculatorGame() {
   console.log("Welcome to the Brain Games!");
