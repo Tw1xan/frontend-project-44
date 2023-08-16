@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import { runGame } from '../src/index.js';
-import { cli } from './brain-games.js'
+import { cli, runGame } from '../src/index.js';
+
 
 
 const generateProgression = () => {
