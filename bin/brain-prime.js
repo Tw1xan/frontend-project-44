@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import { runGame } from '../src/index.js';
-import { cli } from './brain-games.js'
+import { cli, runGame } from '../src/index.js';
+
 
 
 const isPrime = (num) => {
@@ -34,8 +34,10 @@ const generateGameData = () => {
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const brainPrime = () => {
-  welcome(description);
+  cli(description);
   runGame(generateGameData);
 };
+
+brainPrime();
 
 export default brainPrime;
