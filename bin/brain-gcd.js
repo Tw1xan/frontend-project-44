@@ -15,9 +15,10 @@ const generateGameData = () => {
 
 const description = 'Find the greatest common divisor of given numbers.';
 
-export default () => {
+const gameGCD = () => {
   welcome(description);
   runGame(generateGameData);
 };
+gameGCD();
 
- 
+export default gameGCD;
