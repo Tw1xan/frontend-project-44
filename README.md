@@ -33,3 +33,10 @@ https://asciinema.org/a/HoGnGTzKlQoW3iBaS6x5Sq1ss
 
 Ссылка на аскинему
 https://asciinema.org/a/0zkwhiudtUaYo1NMKx64Fwm4s
+
+5.Игра "Простое ли число?"
+Математическая игра запускаемая из консоли Ubunty
+Чтобы победить, игроку необходимо правильно ответить на три вопроса. Если ответить неверно хотя бы один раз, игра завершиться.
+
+Ссылка на аскинему
+https://asciinema.org/a/0xc4jPvFZMMb3mEeSpw6mVDcK
