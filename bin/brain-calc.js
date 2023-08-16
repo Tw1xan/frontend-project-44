@@ -9,7 +9,7 @@ function playCalculatorGame() {
   const name = readlineSync.question("May I have your name? ");
   console.log(`Hello, ${name}!`);
 
-  for (let i = 0; i < 3; i++) {  // Number of questions
+  for (let i = 0; i < 3; i++) {  
     const { question, correctAnswer } = generateQuestion();
     const userAnswer = readlineSync.question(`What is the result of the expression?\nQuestion: ${question}\nYour answer: `);
     

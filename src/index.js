@@ -35,7 +35,7 @@ import readlineSync from 'readline-sync';
 
   // Логика игры калькулятор
   
-  const OPERATIONS = {
+  const operations = {
     '+': (a, b) => a + b,
     '-': (a, b) => a - b,
     '*': (a, b) => a * b,
@@ -46,19 +46,19 @@ import readlineSync from 'readline-sync';
     const num2 = Math.floor(Math.random() * 20) + 1;
     const operation = getRandomOperation();
     const question = `${num1} ${operation} ${num2}`;
-    const correctAnswer = OPERATIONS[operation](num1, num2);
+    const correctAnswer = operations[operation](num1, num2);
     return { question, correctAnswer };
   }
   
   function getRandomOperation() {
-    const operationKeys = Object.keys(OPERATIONS);
+    const operationKeys = Object.keys(operations);
     return operationKeys[Math.floor(Math.random() * operationKeys.length)];
   }
   
   export { generateQuestion };
   
   
-  // Логика игры НОД
+  // Логика игры НОД (Наибольший общий делитель)
 
 
 export const welcome = (description) => {
