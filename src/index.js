@@ -1,44 +1,14 @@
 import readlineSync from 'readline-sync';
 
-    export function isEven(number) {
-        return number % 2 === 0;
-      };
 
-    
-  // Логика игры калькулятор
-  
-  const operations = {
-    '+': (a, b) => a + b,
-    '-': (a, b) => a - b,
-    '*': (a, b) => a * b,
-  };
-  
-  function generateQuestion() {
-    const num1 = Math.floor(Math.random() * 20) + 1;
-    const num2 = Math.floor(Math.random() * 20) + 1;
-    const operation = getRandomOperation();
-    const question = `${num1} ${operation} ${num2}`;
-    const correctAnswer = operations[operation](num1, num2);
-    return { question, correctAnswer };
-  }
-  
-  function getRandomOperation() {
-    const operationKeys = Object.keys(operations);
-    return operationKeys[Math.floor(Math.random() * operationKeys.length)];
-  }
-  
-  export { generateQuestion };
-  
-  
-  // Логика игры НОД (Наибольший общий делитель)
-
-
+// приветстие
 export const cli = (description) => {
   console.log('Welcome to the Brain Games!');
   const playerName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${playerName}!\n${description}и`);
+  console.log(`Hello, ${playerName}!${description}и`);
 };
 
+// общая логика игр
 export const runGame = (generateGameData) => {
   const numberOfQuestions = 3;
 

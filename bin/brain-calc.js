@@ -1,29 +1,40 @@
 #!/usr/bin/env node
 
-import { generateQuestion } from '../src/index.js';
-import readlineSync from 'readline-sync';
-// import { cli } from '../bin/brain-games.js';
+import { cli, runGame } from '../src/index.js';
 
-function playCalculatorGame() {
-  console.log("Welcome to the Brain Games!");
-  const name = readlineSync.question("May I have your name? ");
-  console.log(`Hello, ${name}!`);
 
-  for (let i = 0; i < 3; i++) {  
-    const { question, correctAnswer } = generateQuestion();
-    const userAnswer = readlineSync.question(`What is the result of the expression?\nQuestion: ${question}\nYour answer: `);
-    
-    if (userAnswer === correctAnswer.toString()) {
-      console.log("Correct!");
-    } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      console.log(`Let's try again, ${name}!`);
-      return;
-    }
+const generateGameData = () => {
+  const num1 = Math.floor(Math.random() * 50);
+  const num2 = Math.floor(Math.random() * 50);
+  const operators = ['+', '-', '*'];
+  const operator = operators[Math.floor(Math.random() * operators.length)];
+  const question = `${num1} ${operator} ${num2}`;
+  
+  let correctAnswer;
+  switch (operator) {
+    case '+':
+      correctAnswer = (num1 + num2).toString();
+      break;
+    case '-':
+      correctAnswer = (num1 - num2).toString();
+      break;
+    case '*':
+      correctAnswer = (num1 * num2).toString();
+      break;
+    default:
+      break;
   }
+  
+  return [question, correctAnswer];
+};
 
-  console.log(`Congratulations, ${name}!\n`);
-}
+const description = 'What is the result of the expression?';
 
-playCalculatorGame();
+const calcGame = () => {
+  cli(description);
+  runGame(generateGameData);
+};
 
+calcGame();
+
+export default calcGame;

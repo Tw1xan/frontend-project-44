@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 
-import { cli, runGame, isEven } from '../src/index.js';
+import { cli, runGame } from '../src/index.js';
 
+function isEven(number) {
+  return number % 2 === 0;
+};
 
 const generateGameData = () => {
   const number = Math.floor(Math.random() * 100) + 1;
