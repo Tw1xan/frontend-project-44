@@ -25,3 +25,11 @@ https://asciinema.org/a/yJkHpJMJym77KVKN1apYF9H6r
 
 Ссылка на аскинему
 https://asciinema.org/a/HoGnGTzKlQoW3iBaS6x5Sq1ss
+
+
+4. Игра "Арифметическая прогрессия" (brain-progression)
+Математическая игра запускаемая из консоли Ubunty
+Чтобы победить, игроку необходимо правильно ответить на три вопроса. Вставляем пропущенные числа. Если ответить неверно хотя бы один раз, игра завершиться. 
+
+Ссылка на аскинему
+https://asciinema.org/a/0zkwhiudtUaYo1NMKx64Fwm4s
