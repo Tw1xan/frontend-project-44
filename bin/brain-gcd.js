@@ -2,7 +2,6 @@
 
 import { cli, runGame } from '../src/index.js';
 
-
 const calculateGCD = (a, b) => (b === 0 ? a : calculateGCD(b, a % b));
 
 const generateGameData = () => {
