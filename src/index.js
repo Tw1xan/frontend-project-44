@@ -1,6 +1,5 @@
 import readlineSync from 'readline-sync';
 
-
 // приветстие
 export const cli = (description) => {
   console.log('Welcome to the Brain Games!');
@@ -22,10 +21,10 @@ export const runGame = (generateGameData) => {
       console.log('Correct!');
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      console.log(`Let's try again!`);
+      console.log('Let\'s try again!');
       return;
     }
   }
 
-  console.log(`Congratulations!`);
+  console.log('Congratulations!');
 };
