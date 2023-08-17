@@ -2,7 +2,6 @@
 
 import { cli, runGame } from '../src/index.js';
 
-
 const generateGameData = () => {
   const num1 = Math.floor(Math.random() * 50);
   const num2 = Math.floor(Math.random() * 50);
@@ -10,7 +9,7 @@ const generateGameData = () => {
   const operator = operators[Math.floor(Math.random() * operators.length)];
   const question = `${num1} ${operator} ${num2}`;
   
-  let correctAnswer;
+let correctAnswer;
   switch (operator) {
     case '+':
       correctAnswer = (num1 + num2).toString();
@@ -25,7 +24,7 @@ const generateGameData = () => {
       break;
   }
   
-  return [question, correctAnswer];
+return [question, correctAnswer];
 };
 
 const description = 'What is the result of the expression?';
