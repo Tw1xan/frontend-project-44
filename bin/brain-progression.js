@@ -2,10 +2,9 @@
 
 import { cli, runGame } from '../src/index.js';
 
-
 const generateProgression = () => {
   const progressionLength = Math.floor(Math.random() * 6) + 5; 
-  const hiddenIndex = Math.floor(Math.random() * progressionLength);
+  const hiddenIndex = Math.floor(Math.random() * progressionLength); 
   const startNumber = Math.floor(Math.random() * 100) + 1;
   const step = Math.floor(Math.random() * 10) + 1;
 
