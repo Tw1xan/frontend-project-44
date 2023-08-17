@@ -2,8 +2,6 @@
 
 import { cli, runGame } from '../src/index.js';
 
-
-
 const isPrime = (num) => {
   if (num <= 1) {
     return false;
