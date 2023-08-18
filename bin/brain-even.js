@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { cli, runGame } from '../src/index.js';
+import { runGame } from '../src/index.js';
 
 function isEven(number) {
   return number % 2 === 0;
@@ -16,7 +16,7 @@ const generateGameData = () => {
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const evenGame = () => {
-  cli(description);
+  
   runGame(generateGameData);
 };
 evenGame();
