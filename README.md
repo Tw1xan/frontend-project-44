@@ -2,10 +2,19 @@
 [![Actions Status](https://github.com/Tw1xan/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Tw1xan/frontend-project-44/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/190ed4df6099ebc97adb/maintainability)](https://codeclimate.com/github/Tw1xan/frontend-project-44/maintainability)
 
-ОПИСАНИЕ ИГР
-1.Чётные числа (Brain-even)
-Математическая игра запускаемая из консоли Ubunty
-Чтобы победить, игроку необходимо правильно ответить на три вопроса. Ответить 'yes', если число чётное, и 'no' если число нечётное. При неверном ответе хотя бы на один вопрос, игра завершиться и вы проиграете.
+# PROJECT DESCRIPTION
+
+Mind Games : This is a project consisting of 5 console games to train your brain. Each game asks 3 questions that need to be answered correctly. If you have answered all the questions, it is considered that you have passed the game. In case of an incorrect answer, the game will end and you will be asked to try again.
+
+Installation
+
+make install
+
+make link
+
+1.Even numbers (Brain-even)
+A math game launched from the Ubuntu console
+To win, the player needs to answer three questions correctly. Answer 'yes' if the number is even, and 'no' if the number is odd. If you answer at least one question incorrectly, the game will end and you will lose.
 
 Ссылка на аскинему как играть, и что будет если ответить неверно.
 

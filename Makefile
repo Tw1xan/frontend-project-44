@@ -15,5 +15,5 @@ brain-gcd:
 publish: 
 	npm publish --dry-run
 lint: 
-	npx eslint
+	npm eslint
 
