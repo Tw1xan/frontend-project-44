@@ -27,11 +27,11 @@ const generateGameData = () => {
   return [question, correctAnswer];
 };
 
-const description = 'What is the result of the expression?';
+const description = '\nWhat is the result of the expression?';
 
 const calcGame = () => {
   
-  runGame(generateGameData);
+  runGame(generateGameData, description);
 };
 
 calcGame();

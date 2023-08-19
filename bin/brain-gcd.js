@@ -12,11 +12,11 @@ const generateGameData = () => {
   return [question, correctAnswer];
 };
 
-const description = 'Find the greatest common divisor of given numbers.';
+const description = '\nFind the greatest common divisor of given numbers.';
 
 const gameGCD = () => {
   
-  runGame(generateGameData);
+  runGame(generateGameData, description);
 };
 gameGCD();
 
