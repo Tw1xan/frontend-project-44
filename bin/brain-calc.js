@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { cli, runGame } from '../src/index.js';
+import { runGame } from '../src/index.js';
 
 const generateGameData = () => {
   const num1 = Math.floor(Math.random() * 50);
@@ -30,7 +30,7 @@ const generateGameData = () => {
 const description = 'What is the result of the expression?';
 
 const calcGame = () => {
-  cli(description);
+  
   runGame(generateGameData);
 };
 

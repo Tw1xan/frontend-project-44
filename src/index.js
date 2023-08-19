@@ -1,6 +1,7 @@
 import readlineSync from 'readline-sync';
 
 // приветстие
+
 export const cli = (description) => {
   console.log('Welcome to the Brain Games!');
   const playerName = readlineSync.question('May I have your name? ');
@@ -9,6 +10,10 @@ export const cli = (description) => {
 
 // общая логика игр
 export const runGame = (generateGameData) => {
+
+  console.log('Welcome to the Brain Games!');
+  const playerName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${playerName}!`);
   const numberOfQuestions = 3;
 
   for (let i = 0; i < numberOfQuestions; i += 1) {
@@ -26,5 +31,5 @@ export const runGame = (generateGameData) => {
     }
   }
 
-  console.log('Congratulations!');
+  console.log(`Congratulations, ${playerName}!`);
 };
