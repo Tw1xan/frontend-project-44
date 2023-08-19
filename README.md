@@ -6,46 +6,49 @@
 
 Mind Games : This is a project consisting of 5 console games to train your brain. Each game asks 3 questions that need to be answered correctly. If you have answered all the questions, it is considered that you have passed the game. In case of an incorrect answer, the game will end and you will be asked to try again.
 
-Installation
+### Installation
 
 make install
 
 make link
 
-1.Even numbers (Brain-even)
+## 1.**Even numbers** (Brain-even)
 A math game launched from the Ubuntu console
 To win, the player needs to answer three questions correctly. Answer 'yes' if the number is even, and 'no' if the number is odd. If you answer at least one question incorrectly, the game will end and you will lose.
 
-Ссылка на аскинему как играть, и что будет если ответить неверно.
+Link to askin how to play, and what will happen if the answer is incorrect.
 
 https://asciinema.org/a/hQdCmXtqZYvyTPHUavfK2ewNL
 
-2.Калькулятор (Brain-calc)
-Математическая игра запускаемая из консоли Ubunty
-Чтобы победить, игроку необходимо правильно ответить на три вопроса. Если ответить неверно хотя бы один раз, игра завершиться.
+## 2.**Calculator** (Brain-calc)
+A math game launched from the Ubuntu console
+To win, the player needs to answer three questions correctly. If you answer incorrectly at least once, the game will end.
 
-Ссылка на аскинему
+Link to askinema:
 
 https://asciinema.org/a/yJkHpJMJym77KVKN1apYF9H6r
 
-3.Наибольший общий делитель - НОД (Brain-gcd)
-Математическая игра запускаемая из консоли Ubunty
-Чтобы победить, игроку необходимо правильно ответить на три вопроса. Название игры говорит само за себя, правила игры таковы: необходимо найти общий самый наибольший делитель для обоих чисел. Если ответить неверно хотя бы один раз, игра завершиться
+## 3.**The largest common divisor is a NODE** (Brain-gcd)
+A math game launched from the Ubuntu console
+To win, the player needs to answer three questions correctly. The name of the game speaks for itself, the rules of the game are as follows: you need to find the common largest divisor for both numbers. If you answer incorrectly at least once, the game will end
 
-Ссылка на аскинему
+Link to askinema:
+
 https://asciinema.org/a/HoGnGTzKlQoW3iBaS6x5Sq1ss
 
 
-4. Игра "Арифметическая прогрессия" (brain-progression)
-Математическая игра запускаемая из консоли Ubunty
-Чтобы победить, игроку необходимо правильно ответить на три вопроса. Вставляем пропущенные числа. Если ответить неверно хотя бы один раз, игра завершиться. 
+## 4. **The game "Arithmetic progression"** (brain-progression)
+A math game launched from the Ubuntu console
+To win, the player needs to answer three questions correctly. We insert the missing numbers. If you answer incorrectly at least once, the game will end.
 
-Ссылка на аскинему
+
+
 https://asciinema.org/a/0zkwhiudtUaYo1NMKx64Fwm4s
 
-5.Игра "Простое ли число?"
-Математическая игра запускаемая из консоли Ubunty
-Чтобы победить, игроку необходимо правильно ответить на три вопроса. Если ответить неверно хотя бы один раз, игра завершиться.
+## 5.**The game "Is a prime number?"**
+A math game launched from the Ubuntu console
+To win, the player needs to answer three questions correctly. If you answer incorrectly at least once, the game will end.
 
-Ссылка на аскинему
+Link to askinema:
+
 https://asciinema.org/a/0xc4jPvFZMMb3mEeSpw6mVDcK
