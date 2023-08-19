@@ -8,9 +8,9 @@ Mind Games : This is a project consisting of 5 console games to train your brain
 
 ### Installation
 
-make install
+`make install`
 
-make link
+`make link`
 
 ## 1.**Even numbers** (Brain-even)
 A math game launched from the Ubuntu console
@@ -18,7 +18,7 @@ To win, the player needs to answer three questions correctly. Answer 'yes' if th
 
 Link to askin how to play, and what will happen if the answer is incorrect.
 
-https://asciinema.org/a/hQdCmXtqZYvyTPHUavfK2ewNL
+![Aska num 1](https://asciinema.org/a/hQdCmXtqZYvyTPHUavfK2ewNL)
 
 ## 2.**Calculator** (Brain-calc)
 A math game launched from the Ubuntu console
