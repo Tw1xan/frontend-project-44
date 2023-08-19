@@ -16,6 +16,28 @@ make install
 make link
 ```
 
+### Launch Instructions:
+
+Launches the "Parity Check" game
+
+#### brain-even
+
+Launches the "Calculator" game
+
+#### brain-calc
+
+Launches the "Greatest Common Divisor" game
+
+#### brain-gcd
+
+Starts the game "Arithmetic Progression"
+
+#### brain-progression
+
+Launches the game "Is a prime number?"
+
+#### brain-prime
+
 ## 1.**Even numbers** (Brain-even)
 A math game launched from the Ubuntu console
 To win, the player needs to answer three questions correctly. Answer 'yes' if the number is even, and 'no' if the number is odd. If you answer at least one question incorrectly, the game will end and you will lose.
