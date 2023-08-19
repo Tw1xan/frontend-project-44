@@ -19,7 +19,7 @@ const generateProgression = () => {
   return [question, correctAnswer];
 };
 
-const description = '\nWhat number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
 const progressionGameTop = () => {
   runGame(generateProgression, description);

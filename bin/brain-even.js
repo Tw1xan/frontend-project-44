@@ -13,7 +13,7 @@ const generateGameData = () => {
   return [question, correctAnswer];
 };
 
-const description = '\nAnswer "yes" if the number is even, otherwise answer "no".';
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const evenGame = () => {
   runGame(generateGameData, description);

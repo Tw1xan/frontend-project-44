@@ -29,7 +29,7 @@ const generateGameData = () => {
   return [question, correctAnswer];
 };
 
-const description = '\nAnswer "yes" if given number is prime. Otherwise answer "no".';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const brainPrime = () => {
   runGame(generateGameData, description);

@@ -27,7 +27,7 @@ const generateGameData = () => {
   return [question, correctAnswer];
 };
 
-const description = '\nWhat is the result of the expression?';
+const description = 'What is the result of the expression?';
 
 const calcGame = () => {
   runGame(generateGameData, description);
