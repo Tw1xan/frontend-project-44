@@ -8,7 +8,9 @@ Mind Games : This is a project consisting of 5 console games to train your brain
 
 ### Installation
 
-`make install`
+```JavaScript
+make install
+```
 
 `make link`
 
