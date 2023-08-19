@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { runGame } from '../src/index.js';
+import runGame from '../src/index.js';
 
 const calculateGCD = (a, b) => (b === 0 ? a : calculateGCD(b, a % b));
 
@@ -15,7 +15,6 @@ const generateGameData = () => {
 const description = '\nFind the greatest common divisor of given numbers.';
 
 const gameGCD = () => {
-  
   runGame(generateGameData, description);
 };
 gameGCD();

@@ -1,10 +1,7 @@
 import readlineSync from 'readline-sync';
 
-
-
 // общая логика игр и приветствие
-export const runGame = (generateGameData, description) => {
-
+const runGame = (generateGameData, description) => {
   console.log('Welcome to the Brain Games!');
   const playerName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${playerName}!${description}`);
@@ -28,3 +25,5 @@ export const runGame = (generateGameData, description) => {
 
   console.log(`Congratulations, ${playerName}!`);
 };
+
+export default runGame;

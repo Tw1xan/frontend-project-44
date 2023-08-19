@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { runGame } from '../src/index.js';
+import runGame from '../src/index.js';
 
 const generateProgression = () => {
   const progressionLength = Math.floor(Math.random() * 6) + 5;
@@ -22,7 +22,6 @@ const generateProgression = () => {
 const description = '\nWhat number is missing in the progression?';
 
 const progressionGameTop = () => {
-  
   runGame(generateProgression, description);
 };
 
