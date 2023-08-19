@@ -4,7 +4,7 @@
 
 # PROJECT DESCRIPTION
 
-Mind Games : This is a project consisting of 5 console games to train your brain. Each game asks 3 questions that need to be answered correctly. If you have answered all the questions, it is considered that you have passed the game. In case of an incorrect answer, the game will end and you will be asked to try again.
+"Mind Games" : This is a project consisting of 5 console games to train your brain. Each game asks 3 questions that need to be answered correctly. If you have answered all the questions, it is considered that you have passed the game. In case of an incorrect answer, the game will end and you will be asked to try again.
 
 ### Installation
 
