@@ -21,7 +21,7 @@ export const runGame = (generateGameData, description) => {
       console.log('Correct!');
     } else {
       console.log(`'${userAnswer}'\n is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      console.log("Let's try again!");
+      console.log(`Let's try again, ${playerName}!`);
       return;
     }
   }
