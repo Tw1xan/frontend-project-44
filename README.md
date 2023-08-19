@@ -22,7 +22,7 @@ To win, the player needs to answer three questions correctly. Answer 'yes' if th
 
 Link to askin how to play, and what will happen if the answer is incorrect.
 
-[![video]()](https://asciinema.org/a/hQdCmXtqZYvyTPHUavfK2ewNL)
+[!(https://asciinema.org/a/hQdCmXtqZYvyTPHUavfK2ewNL)]
 
 ## 2.**Calculator** (Brain-calc)
 A math game launched from the Ubuntu console
