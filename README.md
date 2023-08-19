@@ -12,9 +12,9 @@ Mind Games : This is a project consisting of 5 console games to train your brain
 make install
 ```
 
-``JavaScript
+```JavaScript
 make link
-``
+```
 
 ## 1.**Even numbers** (Brain-even)
 A math game launched from the Ubuntu console
