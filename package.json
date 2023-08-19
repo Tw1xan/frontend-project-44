@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "type": "module",
-  "description": "[![Actions Status](https://github.com/Tw1xan/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Tw1xan/frontend-project-44/actions)",
+  "description": "This project consists of 5 games that train your brain.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "npx eslint ."
