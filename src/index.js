@@ -4,7 +4,7 @@ import readlineSync from 'readline-sync';
 export const cli = (description) => {
   console.log('Welcome to the Brain Games!');
   const playerName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${playerName}!${description}`);
+  console.log(`Hello, ${playerName}!\n${description}`);
 };
 
 // общая логика игр
@@ -20,7 +20,7 @@ export const runGame = (generateGameData) => {
     if (userAnswer === correctAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+      console.log(`'${userAnswer}'\n is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log('Let\'s try again!');
       return;
     }
