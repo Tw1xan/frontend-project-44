@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import cli from '../src/cli.js';
+import makeWelcome from '../src/makeWelcome.js';
 
-cli();
+makeWelcome();
 
 
