@@ -32,7 +32,6 @@
   },
   "homepage": "https://github.com/Tw1xan/frontend-project-44#readme",
   "dependencies": {
-    "babel-eslint": "^10.1.0",
     "lodash": "^4.17.21",
     "prettier": "^3.0.0",
     "readline-sync": "^1.4.10"
