@@ -1,5 +1,5 @@
 import runGame from '../index.js';
-import getRandomInRange from '../utils.js'
+import getRandomInRange from '../utils.js';
 
 const generateGameData = () => {
   const num1 = getRandomInRange();
