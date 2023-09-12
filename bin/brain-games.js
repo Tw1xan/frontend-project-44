@@ -3,5 +3,3 @@
 import makeWelcome from '../src/makeWelcome.js';
 
 makeWelcome();
-
-
